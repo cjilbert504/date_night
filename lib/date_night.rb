@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "date"
 require_relative "date_night/version"
 require_relative "date_night/string_formatters"
 require_relative "date_night/time_formatters"
@@ -7,6 +8,10 @@ require_relative "date_night/time_formatters"
 # Module for friendly Time/Date/DateTime formatting
 module DateNight
   class Error < StandardError; end
+end
+
+class Date
+  include DateNight::TimeFormatters
 end
 
 class String

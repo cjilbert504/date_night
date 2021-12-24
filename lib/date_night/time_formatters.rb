@@ -10,5 +10,13 @@ module DateNight
     def mm_dd_yy
       strftime("%m %e %y")
     end
+
+    def full_month_yyyy
+      strftime("%B %Y")
+    end
+
+    def short_month_yyyy
+      strftime("%b %Y")
+    end
   end
 end

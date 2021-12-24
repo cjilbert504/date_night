@@ -17,10 +17,12 @@ class DateNightTest < Minitest::Test
 
   def test_slashed_date_format
     assert_equal @current_time.mm_dd_yyyy.slashed, @current_time.strftime("%m/%d/%Y")
+    assert_equal @current_time.mm_dd_yy.slashed, @current_time.strftime("%m/%e/%y")
   end
 
   def test_dashed_date_format
     assert_equal @current_time.mm_dd_yyyy.dashed, @current_time.strftime("%m-%d-%Y")
+    assert_equal @current_time.mm_dd_yy.dashed, @current_time.strftime("%m-%e-%y")
   end
 
   def test_mm_dd_yy

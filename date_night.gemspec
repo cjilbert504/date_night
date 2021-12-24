@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["cjilbert504@gmail.com"]
 
   spec.summary       = "Dates how you want 'em."
-  spec.description   = "Perhaps an easier to remember way to format dates instead of having to look up the strftime options all the time like I do :)"
+  spec.description   = "Friendly ways to format dates. Instead of looking up strftime options all the time like I do :)"
   spec.homepage      = "https://github.com/cjilbert504/date_night"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.5.0"

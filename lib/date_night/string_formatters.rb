@@ -4,11 +4,11 @@ module DateNight
   # Methods for formatting Time objects which have already been parsed with the TimeFormatters
   module StringFormatters
     def slashed
-      gsub(" ", "/")
+      tr(" ", "/")
     end
 
     def dashed
-      gsub(" ", "-")
+      tr(" ", "-")
     end
   end
 end

@@ -8,7 +8,7 @@ module DateNight
     end
 
     def mm_dd_yy
-      strftime("%m %e %y")
+      strftime("%m %d %y")
     end
 
     def full_month_yyyy
